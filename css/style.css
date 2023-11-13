@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+
+
+
+}
+
+main {
+    background-color: #fff;
+
+}
+
+
+
+/*######################## HEADER ######################*/
+
+header {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+
+}
+
+header h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 5rem;
+}
+
+header p {
+    color: white;
+    font-size: 2rem;
+    margin-top: -2.5rem;
+    margin-bottom: 6rem;
+}
+
+
+
+span {
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+
+.scoll-icon {
+    margin: 2rem;
+}
+
+/*######################## VIDEO ######################*/
+
+.video-wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -99;
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/*######################## SECTION GALLERY######################*/
+
+/*######################## BUG ######################## */
+
+main span {
+    font-weight: 800;
+}
+
+.gallery {
+
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #0E0E0E;
+}
+
+
+
+.gallery p {
+    margin: 0;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 88%;
+
+}
+
+.img-gallery {
+    position: relative;
+    width: 33.33%;
+}
+
+
+
+
+.img-gallery img {
+    display: block;
+    width: 100%;
+
+}
+
+
+
+
+
+
+/*######################## FOOTER ######################*/
+
+footer {
+    background-color: #0E0E0E;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 2rem;
+}
+
+
+footer p {
+    color: white;
+}
+
+
+
+/*######################## MEDIA QUERIES MOBILE######################*/
+
+@media (max-width:768px) {
+
+    /* CSS mobile ici */
+    .video-wrapper {
+        height: 100vh;
+        width: 100%;
+    }
+
+    video {
+        width: auto;
+    }
+
+    header h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 3rem;
+    }
+
+    header p {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+    .img-gallery {
+        width: 100%;
+    }
+
+    .gallery p {
+
+        top: 90%;
+    }
+
+
+}
+
+/*######################## MEDIA QUERIES TABLET ######################*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .img-gallery {
+        width: 50%;
+    }
+
+}
